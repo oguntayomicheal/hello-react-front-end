@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 // Action
 const FETCH_GREETING = 'Greeting/Fetch';
-const url = 'http://127.0.0.1:3000/api/greetings';
+const url = 'http://127.0.0.1:3000/api/v1/greetings';
 
 export const fetchGreeting = createAsyncThunk(FETCH_GREETING, async () => {
   const response = await fetch(url);
